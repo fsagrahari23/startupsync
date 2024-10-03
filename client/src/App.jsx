@@ -26,6 +26,9 @@ import AdminHome from "./components/admin/Home";
 import NotificationPage from "./pages/admin/Notification";
 import ReportsPage from "./pages/admin/ReportPage";
 import LandingPage from "./pages/LandingPage";
+import UserBiddingPage from "./pages/startup/BidingPage";
+import AdminBiddingPage from "./pages/admin/AdminBidPage";
+import BiddingRulesPage from "./pages/BiddingRulePage";
 
 const App = () => {
   let { isAuthenticated, user, isLoading } = useSelector((state) => state.auth);
@@ -65,11 +68,13 @@ const App = () => {
           }
         >
           <Route path="/admin/dashboard" element={<AdminDashboard />} />
-          <Route path="home" element={<AdminHome />} />
+          <Route path="" element={<AdminHome />} />
           <Route path="kycs" element={<KYC />} />
           <Route path="progresses" element={<ProgressForm />} />
           <Route path="reports" element={<ReportsPage />} />
           <Route path="notifications" element={<NotificationPage />} />
+          <Route path="admin-bidding" element={<AdminBiddingPage />} />
+          <Route path="eir-form" element={<EIRGrantPage />} />
         </Route>
         <Route
           path="/startup"
@@ -85,7 +90,9 @@ const App = () => {
           <Route path="reports" element={<EIRGrantPage />} />
           <Route path="notifications" element={<Notification />} />
           <Route path="account" element={<StartupProfile />} />
+          <Route path="user-bidding" element={<UserBiddingPage />} />
         </Route>
+        <Route path="/bidding/rules" element={<BiddingRulesPage />} />
         <Route path="*" element={<NotFound />} />
         <Route path="/unauth-page" element={<Unauth />} />
       </Routes>

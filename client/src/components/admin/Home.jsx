@@ -23,11 +23,46 @@ const AdminDashboard = () => {
   const fetchStartups = () => {
     // Simulating fetched data
     const fetchedStartups = [
-      { id: 1, name: "TechUp", progress: 70, grant: "Pending", description: "Tech-based startup", address: "123 Street, City" },
-      { id: 2, name: "EduPlus", progress: 85, grant: "Approved", description: "Education solutions", address: "456 Avenue, City" },
-      { id: 3, name: "EcoSolutions", progress: 45, grant: "Pending", description: "Eco-friendly solutions", address: "789 Road, City" },
-      { id: 4, name: "MedicoHub", progress: 95, grant: "Approved", description: "Medical innovations", address: "101 Street, City" },
-      { id: 5, name: "GreenTech", progress: 60, grant: "Pending", description: "Green technology", address: "202 Boulevard, City" },
+      {
+        id: 1,
+        name: "TechUp",
+        progress: 70,
+        grant: "Pending",
+        description: "Tech-based startup",
+        address: "123 Street, City",
+      },
+      {
+        id: 2,
+        name: "EduPlus",
+        progress: 85,
+        grant: "Approved",
+        description: "Education solutions",
+        address: "456 Avenue, City",
+      },
+      {
+        id: 3,
+        name: "EcoSolutions",
+        progress: 45,
+        grant: "Pending",
+        description: "Eco-friendly solutions",
+        address: "789 Road, City",
+      },
+      {
+        id: 4,
+        name: "MedicoHub",
+        progress: 95,
+        grant: "Approved",
+        description: "Medical innovations",
+        address: "101 Street, City",
+      },
+      {
+        id: 5,
+        name: "GreenTech",
+        progress: 60,
+        grant: "Pending",
+        description: "Green technology",
+        address: "202 Boulevard, City",
+      },
       // More startups...
     ];
 
@@ -115,12 +150,7 @@ const AdminDashboard = () => {
                   >
                     <FaEye className="mr-2" /> View
                   </button>
-                  <button
-                    onClick={() => handleEdit(startup.id)}
-                    className="bg-yellow-400 text-white px-4 py-2 rounded-md hover:bg-yellow-500 transition-all duration-300 flex items-center"
-                  >
-                    <FaEdit className="mr-2" /> Edit
-                  </button>
+
                   <button
                     onClick={() => handleDelete(startup.id)}
                     className="bg-red-400 text-white px-4 py-2 rounded-md hover:bg-red-500 transition-all duration-300 flex items-center"
@@ -144,15 +174,23 @@ const AdminDashboard = () => {
         <Modal onClose={() => setIsModalOpen(false)}>
           <div className="p-6">
             <h2 className="text-xl font-bold mb-4">{selectedStartup.name}</h2>
-            <p className="mb-2"><strong>Description:</strong> {selectedStartup.description}</p>
-            <p className="mb-2"><strong>Address:</strong> {selectedStartup.address}</p>
-            <p className="mb-2"><strong>Grant Status:</strong> {selectedStartup.grant}</p>
+            <p className="mb-2">
+              <strong>Description:</strong> {selectedStartup.description}
+            </p>
+            <p className="mb-2">
+              <strong>Address:</strong> {selectedStartup.address}
+            </p>
+            <p className="mb-2">
+              <strong>Grant Status:</strong> {selectedStartup.grant}
+            </p>
 
             {/* Progress Chart */}
             <div className="mb-4">
               <strong>Progress:</strong>
               <div className="w-64 h-64 mx-auto my-4">
-                <Doughnut data={getProgressChartData(selectedStartup.progress)} />
+                <Doughnut
+                  data={getProgressChartData(selectedStartup.progress)}
+                />
               </div>
             </div>
           </div>

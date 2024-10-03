@@ -150,6 +150,10 @@ To deploy this application on a production environment:
 4. Push to the branch (`git push origin feature-name`).
 5. Open a Pull Request.
 
+## Team Contribution (IIITS LATENT)
+
+-**Monu**: Leader (handles backend). -**Ashutosh**: PPT Creator. -**Vasudev**: Webiste Component Creator. -**Ansh Mishra**: Website Compnents Creator.
+
 ## 🤝 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.

@@ -46,6 +46,15 @@ function MenuItems() {
         // Handle Notifications navigation
         navigate("/startup/notifications");
         break;
+      case "bidding":
+        // Handle Bidding navigation
+        navigate("/startup/user-bidding");
+        break;
+      case "rules":
+        // Handle Bidding navigation
+        navigate("/bidding/rules");
+        break;
+
       default:
         // Handle default navigation
         navigate("/startup/home");
@@ -104,8 +113,6 @@ function HeaderRightContain() {
 }
 
 const Dashboard = () => {
-  
- 
   return (
     <header className="sticky top-0 z-40 w-full border-b bg-background">
       <div className="flex h-16 items-center justify-between px-4 md:px-6">

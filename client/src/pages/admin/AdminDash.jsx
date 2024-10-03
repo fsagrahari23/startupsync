@@ -32,8 +32,17 @@ function MenuItems() {
       case "notifications":
         navigate("/admin/notifications");
         break;
+      case "EIR":
+        navigate("/admin/Eir-form");
+        break;
+      case "bidding":
+        navigate("/admin/admin-bidding");
+        break;
+      case "rules":
+        navigate("/bidding/rules");
+        break;
       default:
-        navigate("/admin/home");
+        navigate("/admin");
         break;
     }
   };

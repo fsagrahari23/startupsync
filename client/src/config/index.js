@@ -60,6 +60,16 @@ export const startupViewHeaderMenuItems=[
     label:'Notifications',
     path:'/startup/reports',
   },
+  {
+    id:'bidding',
+    label:'Bidding',
+    path:'/startup/bidding',
+  },
+  {
+    id:'rules',
+    label:'Bid rules',
+    path:'/admin/bidding',
+  },
    
 ]
 
@@ -79,5 +89,21 @@ export const AdminstartupViewHeaderMenuItems=[
     label:'Notifications',
     path:'/startup/Notifications',
   },
+  {
+    id:'EIR',
+    label:'EIR',
+    path:'/startup/Notifications',
+  },
+  {
+    id:'bidding',
+    label:'Biddings',
+    path:'/admin/bidding',
+  },
+  {
+    id:'rules',
+    label:'Bid rules',
+    path:'/admin/bidding',
+  },
+  
    
 ]
