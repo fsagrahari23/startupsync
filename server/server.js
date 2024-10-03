@@ -66,7 +66,7 @@ cron.schedule("0 9 * * *", async () => {
 });
 const PORT = process.env.PORT || 5500;
 // create a database connection 
-mongoose.connect(`mongodb+srv://monu:monu@cluster0.iua2e.mongodb.net/bitNbuild`).then(() => {
+mongoose.connect(process.env.MONGO_URL).then(() => {
   console.log('Database connected successfully');
 }).catch((err) => {
   console.log(err);
