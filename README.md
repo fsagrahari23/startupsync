@@ -6,10 +6,13 @@
 
 ## 🏗️ Tech Stack
 
-- **Frontend**: React.js, Tailwind CSS, Framer Motion
+- **Frontend**: React.js, Tailwind CSS, Framer Motion, ShadCN
 - **Backend**: Node.js, Express.js, MongoDB
 - **State Management**: Redux, Redux Toolkit (Async Thunk)
+- **Real-Time Communication**:Socket.IO
 - **API Calls**: Axios
+- **Scheduled Tasks**: Node-Cron
+- **Email Notifications**: Nodemailer
 - **Styling**: Tailwind CSS (Responsive with Grid & Flexbox)
 - **Animations**: Framer Motion
 
@@ -18,13 +21,15 @@
 ### User & Admin Dashboard
 
 - **Add, Edit, Delete Notifications**: Users and Admins can manage notifications.
+- **Real-Time Notifications**: Get updates instantly with Socket.IO for startup and admin activities.
 - **Progress Tracking**: Monitor and submit startup progress reports.
 - **KYC Management**: Upload and manage KYC documents securely.
 - **Grant Management**: Access and manage grant opportunities.
 - **Monthly Reporting**: Submit and generate monthly reports to track startup growth.
 - **Dynamic FAQ Section**: Expandable and collapsible FAQ section with smooth animations.
+- **Email Reminders**: Scheduled reminders via Node-Cron and Nodemailer for progress updates and KYC submissions.
 
-### Shark Tank Simulation
+### Upcoming Shark Tank Simulation
 
 - **Interactive Bidding**: Simulates a Shark Tank-like bidding experience where users pitch ideas and investors (sharks) engage.
 - **Notification System**: Real-time notifications for startups and sharks, providing updates on grants, progress, and new pitches.

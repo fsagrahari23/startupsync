@@ -1,7 +1,13 @@
-const express = require('express');
-const { sendNotification } = require('../../controllers/startup/notificationController');
+const express = require("express");
 const router = express.Router();
+const {
+    getNotifications,
+    addNotification,
+    deleteNotification
+} = require("../../controllers/startup/notificationController");
 
-router.post('/', sendNotification);   // Send notification
+router.get("/", getNotifications);
+router.post("/", addNotification);
+router.delete("/:id", deleteNotification);
 
 module.exports = router;
