@@ -27,7 +27,9 @@
 - **Grant Management**: Access and manage grant opportunities.
 - **Monthly Reporting**: Submit and generate monthly reports to track startup growth.
 - **Dynamic FAQ Section**: Expandable and collapsible FAQ section with smooth animations.
-- **Email Reminders**: Scheduled reminders via Node-Cron and Nodemailer for progress updates and KYC submissions.
+- **Email Reminders**: Scheduled reminders via Node-Cron and Nodemailer for progress updates and KYC submissions and also when we are registering a user the user gets a welcome meassage from startupsync as shown in image
+- 
+
 
 ### Upcoming Shark Tank Simulation
 
