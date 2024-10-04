@@ -154,7 +154,7 @@ To deploy this application on a production environment:
 
 ## Team Contribution (IIITS LATENT)
 
--**Monu**: Leader (handles backend). -**Ashutosh**: PPT Creator. -**Vasudev**: Webiste Component Creator. -**Ansh Mishra**: Website Compnents Creator.
+-**Monu**: Leader (handles backend). -**Ashutosh**: PPT Creator. -**Vasudev**: Webiste Component Creator(handles Frontend). -**Ansh Mishra**: Website Compnents Creator.
 
 ## 🤝 License
 
