@@ -51,7 +51,7 @@
 - MongoDB installed and running
 
 ### Backend Setup
-
+0. Foe admin use pass as : 1234 and email as rao.daksh555@gmail.com
 1. Clone the repository:
    ```bash
    git clone https://github.com/your-repo/startupsync.git
@@ -91,7 +91,7 @@
 
 ### Run the Application
 
-- Frontend: `http://localhost:3000`
+- Frontend: `http://localhost:5174`
 - Backend: `http://localhost:5500`
 
 ## 🛠️ API Endpoints
